@@ -1,0 +1,629 @@
+@font-face
+{
+    font-family: myFont;
+    src: url("/font/Bright.otf");
+
+}
+
+@font-face
+{
+    font-family: myFont1;
+    src: url("/font/Montserrat.otf");
+}
+
+@keyframes gradient 
+{
+    0% 
+    {
+        background-position: 0% 50%;
+    }
+    50% 
+    {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+/* nav style */
+.nav
+{
+    position: sticky;
+    top: 0px;
+    background-color:#FFFCF9;
+    font-family: myFont;
+    font-size: 25px;
+    color: #ED8092;
+    display: flex;
+    justify-content:space-between;
+}
+
+
+.nav_bar
+{
+    margin-left: 57%;
+}
+
+.p_management_logo
+{
+    width: 130px;
+    margin: auto;
+}
+
+.nav_ul
+{
+    /* margin-left: 100px; */
+    /* margin: auto; */
+}
+
+.nav_li
+{
+    margin-right: 70px;
+}
+
+.nav_link
+{
+    color: #ED8092;
+}
+
+.nav_link:hover
+{
+    color: #FCC0C5;
+    text-decoration: underline;
+}
+
+.modal_logout_body
+{
+    background-color:#FFFCF9;
+    text-align: center;
+}
+
+.modal_logout_dialog
+{
+    font-family: myFont;
+    font-size: 20px;
+    color: #ED8092;
+    border: #ED8092;
+}
+
+
+.modal_logout_btn
+{
+    font-size:20px ;
+    width: 10%;
+    height: 10%;
+    background-color: #F2A9B6;
+    border: 1px solid #F2A9B6;
+    color: #FFFCF9;
+}
+
+.modal_logout_btn:hover
+{
+    font-size:20px ;
+    background-color: #FCC0C5;
+    border: 1px solid #FCC0C5;
+}
+
+/* footer */
+.footer
+{
+    background-color:#FFFCF9;
+    margin-bottom: -1%;
+    font-family: myFont;
+    font-size:20px ;
+}
+
+.footer_body
+{
+    margin-top: 5%;
+    padding-top: 1%;
+    padding-bottom: 1%;
+
+}
+
+.footer_p
+{
+    color: #ED8092;
+    margin-bottom: -5px;
+}
+
+.footer_p1
+{
+    font-size: 15px;
+    font-family: myFont1;
+    color: #ED8092;
+}
+
+.footer_a
+{
+    color: #ED8092;
+    font-size: 15px;
+    font-family: myFont1;
+    text-decoration: none;
+}
+
+.footer_a:hover
+{
+    color: #FCC0C5;
+}
+
+.footer_row
+{
+    width: 80%;
+    margin: auto;
+}
+
+.footer_img
+{
+    width: 20px;
+    margin-right: 10px;
+}
+
+/* login style */
+.index-body
+{
+    background: linear-gradient(-45deg, #FFFFFF, #ED8092, #F2A9B6, #FCC0C5);
+    background-size: 500% 500%;
+    animation: gradient 10s ease infinite;
+}
+
+.login_logo
+{
+    width: 35%;
+}
+
+.notification
+{
+    text-align: center;
+    background-color: #F2A9B6;
+    color: #FFFCF9;
+}
+
+.formlogin
+{
+    width: 90%;
+    margin: auto;
+}
+
+.login_body
+{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    align-content: center;
+    font-family: myFont;
+}
+
+.login_card
+{
+    display: flex;
+    align-items: center;
+    width: 30rem;
+    height: 30rem;
+    margin-top: 7%;
+    background-color: #FFFCF9;
+    color: #ED8092;
+}
+
+.login_logo_body
+{
+   text-align: center;
+}
+
+.login_h1
+{
+    text-align: center;
+}
+
+.login_input
+{
+    font-size:20px ;
+    color: #ED8092;
+    background-color: #FFFCF9;
+    border: 3px solid #F2A9B6;
+}
+
+.login_label
+{
+    font-size:20px ;
+}
+
+.login_btn_div
+{
+    text-align: start;
+}
+
+.login_btn
+{
+    font-size:20px ;
+    color: #FFFCF9;
+    background-color: #F2A9B6;
+    border: 1px solid #F2A9B6;
+}
+
+.login_btn:hover
+{
+    font-size:20px ;
+    background-color: #FCC0C5;
+    border: 1px solid #FCC0C5;
+}
+
+/* p management main style */
+
+.p_management_main_body
+{
+    background-color: #F2A9B6;
+}
+
+.p_management_main_body1
+{
+    margin-top: 5%;
+    color: #ED8092;
+    display: flex;
+    justify-content: space-between;
+}
+
+
+.p_management_table
+{
+    background-color: #FFFCF9;
+    width: 100% ;
+    text-align: center;
+    border-radius: 10px;
+}
+
+table th
+{
+    margin-top:20px;
+    font-family: myFont;
+    font-size: 30px;
+}
+
+table td
+{
+    font-family: myFont1;
+    font-size: 20px;
+}
+
+.table_img
+{
+    width: 80px;
+}
+
+.table_btn
+{
+    font-family: myFont;
+    font-size:20px ;
+    color: #FFFCF9;
+    background-color: #F2A9B6;
+    border: 1px solid #F2A9B6;
+}
+
+.table_btn:hover
+{
+    background-color: #FCC0C5;
+    border: 1px solid #FCC0C5;
+}
+
+/* p management add style */
+
+.p_management_add_body
+{
+    background: linear-gradient(-45deg, #FFFFFF, #ED8092, #F2A9B6, #FCC0C5);
+    background-size: 500% 500%;
+    animation: gradient 15s ease infinite;
+}
+
+.p_management_add_body1
+{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    align-content: center;
+    font-family: myFont;
+    width: 50%;
+}
+
+.p_management_add_card
+{
+    /* display: flex; */
+    align-items: center;
+    width: 10rem;
+    height: 40rem;
+    margin-top: 7%;
+    background-color: #FFFCF9;
+    color: #ED8092;
+    border-radius: 10px;
+
+}
+
+
+.p_management_card_div
+{
+    width: 100%;
+}
+
+.form_add
+{
+    width: 80%;
+    margin: auto;
+}
+
+
+.notification
+{
+    text-align: center;
+    margin: auto;
+    width: 90%;
+    background-color: #F2A9B6;
+    color: #FFFCF9;
+}
+
+
+.add_product_h1
+{
+    text-align: center;
+    margin-top: 5%;
+}
+
+.add_input
+{
+    font-size:20px ;
+    color: #ED8092;
+    background-color: #FFFCF9;
+    border: 3px solid #F2A9B6;
+}
+
+.add_label
+{
+    font-size:20px ;
+}
+
+.add_btn
+{
+    font-size:20px ;
+    background-color: #F2A9B6;
+    color: #FFFCF9;
+    border: 1px solid #F2A9B6;
+}
+
+.add_btn_div
+{
+    text-align: end;
+}
+
+.add_btn:hover
+{
+    font-size:20px ;
+    background-color: #FCC0C5;
+    border: 1px solid #FCC0C5;
+}
+
+/* p management edit style */
+
+.p_management_edit_body
+{
+    background: linear-gradient(-45deg, #FFFFFF, #ED8092, #F2A9B6, #FCC0C5);
+    background-size: 500% 500%;
+    animation: gradient 15s ease infinite;
+}
+
+.p_management_edit_body1
+{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    align-content: center;
+    font-family: myFont;
+    width: 50%;
+}
+
+.p_management_edit_card
+{
+    /* display: flex; */
+    align-items: center;
+    width: 10rem;
+    height: 40rem;
+    margin-top: 7%;
+    background-color: #FFFCF9;
+    color: #ED8092;
+    border-radius: 10px;
+
+}
+
+
+.p_management_edit_div
+{
+    width: 100%;
+}
+
+.form_edit
+{
+    width: 80%;
+    margin: auto;
+}
+
+
+.notification
+{
+    text-align: center;
+    margin: auto;
+    width: 90%;
+    background-color: #F2A9B6;
+    color: #FFFCF9;
+}
+
+.notification2
+{
+    text-align: center;
+    margin: auto;
+    width: 90%;
+    background-color: #F2A9B6;
+    color: #FFFCF9;
+    font-family: myFont1;
+}
+
+
+.edit_product_h1
+{
+    text-align: center;
+    margin-top: 5%;
+}
+
+.edit_input
+{
+    font-size:20px ;
+    color: #ED8092;
+    background-color: #FFFCF9;
+    border: 3px solid #F2A9B6;
+}
+
+.edit_input_id
+{
+    display: none;
+}
+
+.edit_label
+{
+    font-size:20px ;
+}
+
+.edit_btn
+{
+    font-size:20px ;
+    background-color: #F2A9B6;
+    color: #FFFCF9;
+    border: 1px solid #F2A9B6;
+}
+
+.edit_btn_div
+{
+    text-align: end;
+}
+
+.edit_btn:hover
+{
+    font-size:20px ;
+    background-color: #FCC0C5;
+    border: 1px solid #FCC0C5;
+}
+
+.edit_image
+{
+    width: 80px;
+}
+
+/* p management delete style */
+
+.p_management_delete_body
+{
+    background: linear-gradient(-45deg, #FFFFFF, #ED8092, #F2A9B6, #FCC0C5);
+    background-size: 500% 500%;
+    animation: gradient 15s ease infinite;
+}
+
+.p_management_delete_body1
+{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    align-content: center;
+    font-family: myFont;
+    width: 50%;
+}
+
+.p_management_delete_card
+{
+    /* display: flex; */
+    align-items: center;
+    width: 10rem;
+    height: 35rem;
+    margin-top: 7%;
+    background-color: #FFFCF9;
+    color: #ED8092;
+    border-radius: 10px;
+
+}
+
+
+.p_management_delete_div
+{
+    width: 100%;
+}
+
+.form_delete
+{
+    width: 80%;
+    margin: auto;
+}
+
+
+.notification
+{
+    text-align: center;
+    margin: auto;
+    width: 90%;
+    background-color: #F2A9B6;
+    color: #FFFCF9;
+}
+
+.notification2
+{
+    text-align: center;
+    margin: auto;
+    width: 90%;
+    background-color: #F2A9B6;
+    color: #FFFCF9;
+    font-family: myFont1;
+}
+
+
+.delete_product_h1
+{
+    text-align: center;
+    margin-top: 5%;
+}
+
+.delete_input
+{
+    font-size:20px ;
+    color: #ED8092;
+    background-color: #FFFCF9;
+    border: 3px solid #F2A9B6;
+}
+
+.delete_input_id
+{
+    display: none;
+}
+
+.delete_label
+{
+    font-size:20px ;
+}
+
+.delete_btn
+{
+    font-size:20px ;
+    background-color: #F2A9B6;
+    color: #FFFCF9;
+    border: 1px solid #F2A9B6;
+}
+
+.delete_btn_div
+{
+    text-align: end;
+}
+
+.delete_btn:hover
+{
+    font-size:20px ;
+    background-color: #FCC0C5;
+    border: 1px solid #FCC0C5;
+}
+
+.delete_image
+{
+    width: 80px;
+}

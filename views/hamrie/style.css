@@ -1,0 +1,2096 @@
+
+body
+{
+    background-image: url("media/picfullbg1.jpg");
+}
+
+@font-face
+{
+    font-family: myFont;
+    src: url("font/TheSmileFont.otf");
+
+}
+
+@font-face {
+    font-family: myFont2;
+    src: url(font/GlacialIndifference.otf);
+}
+
+@media screen and (max-width: 1500px)
+{
+
+    .bgleaf1,.gridpaper1,.gridpaper2,.gridpaper1,.gridpaper2,.bgleaf1,.bgleaf2,.bgtape1,
+    .bgtape2,.bgflower1,.paperbag1species,.paperbag2species,.paperbag3species,.gridpaper1species,.gridpaper2species,
+    .gridpaper3species,.bgflower1species,.bgflower2species,.bgflower3species,.bgflower4species,.bgflower5species,.bgleaf1species,
+    .bgleaf2species,.bgfleaf3species,.bgfleaf4species,.plainpaper1food,.bgflower1food,
+    .bgflower2food,.bgleaf1food,.bgleaf2food,.plainpaper1,.bgflower1tame,.bgflower2tame,.bgleaf1tame,
+    .bgleaf2tame,.bgleaf3tame,.bgtape1tame,.paperbag1tame,.bgtape1cage,.bgleaf1cage,.bgleaf2cage,.bgflower1cage,
+    .plainpaper1cage,.plainpaper2cage,.gridpaper1bedding,.gridpaper2bedding,.bgleafbedding1,
+    .bgflowerbedding1,.bgleaf1sand,.bgleaf2sand,.bgflower1sand,.plainpaper1toy,.plainpaper2toy,
+    .bgflower1toy,.bgflower2toy,.bgflower3toy,.bgleaf1toy,.bgleaf2toy,.paperbag1bedding, .paperbag2bedding,
+    .bgleaf1shop,.bgleaf2shop,.bgflower1shop,.plainpaper1shop,.plainpaper2shop,.bagleaf1,.bagflower1
+    {display:none;}
+
+    .form-content
+    {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        width: 80%;
+        margin: auto;
+    }
+
+    .form label
+    {
+       margin: auto;
+       margin-bottom: 15px;
+    }
+}
+
+.icon
+{
+    color: black;
+}
+
+.icon:hover
+{
+    color: #CEB2DB;
+}
+
+.container-fluid
+{
+    margin: 0%;
+    padding: 0%;
+}
+
+
+/* nav style */
+.navbar
+{
+    background-image: url("media/picfullbg2.png");
+    background-size: cover;
+    width: 100%;
+}
+
+.navbar-brand img
+{
+    width: 215px;
+    height: 90px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin-left: 2vw;
+    margin-right: 2vw;
+}
+
+.navbar-toggler
+{
+   justify-content: end;
+   margin: 3vw;
+}
+
+.navbar-nav
+{
+    margin: auto;
+    padding-left: 1.4vw;
+}
+.navbar-nav li
+{
+    display: inline;
+    padding-right: 1.4vw;
+}
+
+.nav-link
+{
+    font-family: myFont2;
+    font-size: 20px;
+    color: black;
+}
+
+.nav-link img
+{
+    height: 50px;
+}
+
+.nav-link:hover
+{
+    text-decoration: underline;
+}
+
+#hamsterlogo
+{
+    width:80px;
+    margin-right: 4px;
+}
+
+#carelogo
+{
+    width: 50px;
+    margin-right: 4px;
+}
+
+#cagelogo
+{
+    width: 65px;
+    margin-right: 4px;
+}
+
+#toylogo
+{
+    width: 50px;
+    margin-right: 4px;
+}
+
+#cartlogo
+{
+    width: 50px;
+    margin-right: 4px;
+}
+
+.dropdown-menu
+{
+    background-color:  #F2F1EB;
+    width: 200px;
+}
+
+.dropdown-menu li a
+{
+    font-family:myFont2;
+    font-size: 20px;
+    color: black;
+}
+
+.dropdown-menu li a:hover
+{
+    background-color:#CEB2DB;
+}
+
+
+/* footer style */
+.footer
+{
+    background-image: url("media/picfullbg2.png");
+    background-size: cover;
+    width: 100%;
+    height: 120px;
+}
+
+.footp
+{
+    text-align: center;
+    margin: auto;
+    margin-top: 2%;
+    font-family: myFont2;
+    font-size: 20px;
+    color: black;
+}
+
+.footp1
+{
+    text-align: center;
+    margin: auto;
+    margin-top: 1%;
+    font-family: myFont2;
+    font-size: 20px;
+    color: black;
+}
+
+
+.footlogo
+{
+    text-decoration: none;
+    color: black;
+}
+
+.footlogo:hover
+{
+    text-decoration: underline;
+    color: #CEB2DB;
+}
+
+
+/* button style */
+#btntop{
+    position: fixed;
+    bottom: 10px;
+    float: right;
+    right: 1%;
+    max-width: 50px;
+    width: 100%;
+    font-size: 25px;
+    color: black;
+    border-color:#F2F1EB;
+    background-color: #F2F1EB;
+    padding: .5px;
+    border-radius: 50px;
+    z-index:2;
+}
+
+#btntop:hover
+{
+    color: black;
+    background-color: #CEB2DB;
+}
+
+
+/* index style */
+
+#carousel
+{
+    padding-top: 10vh;
+    margin: auto;
+}
+
+#carousel img
+{
+    margin: auto;
+    width: 50vw;
+    border: 1vw solid #F2F1EB;
+}
+
+.bgpaper1
+{
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 50vh;
+    width: 98.9vw;
+    z-index: -100;
+}
+
+.bgpaper2
+{
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 50vh;
+    width:  98.9vw;
+}
+
+
+.gridpaper1
+{
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 90vh;
+    width: 45vw;
+    z-index: -100;
+    margin-left: 53.9vw;
+    object-fit: contain;
+}
+
+.gridpaper2
+{
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 70vh;
+    width: 45vw;
+    z-index: -100;
+    object-fit: contain;
+    margin-left: -9vw;
+}
+
+.bgleaf1
+{
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 40vh;
+    width: 20vw;
+    z-index: -100;
+    margin-top: 150px;
+    margin-left: -150px;
+    object-fit: contain;
+}
+
+.bgleaf2
+{
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 30vh;
+    width: 10vw;
+    z-index: -100;
+    margin-top: 400px;
+    margin-left: 300px;
+    object-fit: contain;
+}
+
+.bgtape1
+{
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 40vh;
+    width: 20vw;
+    z-index: -100;
+    margin-top: 400px;
+    margin-left: 300px;
+    object-fit: contain;
+}
+
+.bgtape2
+{
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 40vh;
+    width: 20vw;
+    z-index: -100;
+    margin-top: -5vw;
+    margin-left: 40vw;
+    object-fit: contain;
+}
+
+.bgflower1
+{
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 70vh;
+    width: 20vw;
+    z-index: -100;
+    object-fit: contain;
+    margin-left: 78vw;
+}
+
+
+ .indexh1
+{
+    text-align: center;
+    margin-top: 3vw;
+    margin-bottom: 3vw;
+    font-family: myFont;
+    font-size: 70px;
+}
+
+.indexh3
+{
+    text-align: center;
+    margin-top: 3vw;
+    margin-bottom: 3vw;
+    font-family: myFont;
+    font-size: 50px;
+}
+
+.indexp
+{
+    text-align: justify;
+    margin-bottom: 3vw;
+    margin: auto;
+    font-family: myFont2;
+    font-size: 30px;
+    width: 80%;
+}
+
+.indexp1
+{
+    text-align: justify;
+    margin-bottom: 3vw;
+    margin: auto;
+    font-family: myFont2;
+    font-size: 30px;
+    width: 90%;
+}
+
+.hamstercheecksrow ,.hamsterliverow
+{
+    width: 85%;
+    margin: auto;
+}
+
+.vid1
+{
+    margin: auto;
+    margin-bottom: 2vw;
+    background-image: url("media/gridpaper1.1.png");
+    aspect-ratio: 16 / 9;
+    width: 95%;
+}
+
+.vid2
+{
+    margin:auto;
+    margin-bottom: 2vw;
+    background-image: url("media/gridpaper1.1.png");
+    aspect-ratio: 16 / 9;
+    width: 95%;
+}
+
+
+/* hamster species style */
+
+.bgpaper1species
+{
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 60vh;
+    width: 98.9vw;
+    z-index: -100;
+}
+
+.paperbag1species
+{
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 120vh;
+    width: 60vw;
+    z-index: -100;
+    margin-left: -1vw;
+    object-fit: contain;
+}
+
+.paperbag2species
+{
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    width: 45vw;
+    z-index: -100;
+    margin-left: 53vw;
+    object-fit: contain;
+}
+
+.paperbag3species
+{
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 120vh;
+    width: 60vw;
+    z-index: -100;
+    margin-left: -1vw;
+    object-fit: contain;
+}
+
+.gridpaper1species
+{
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 60vh;
+    width: 45vw;
+    z-index: -100;
+    margin-left: 53vw;
+    object-fit: contain;
+}
+
+.gridpaper2species
+{
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 120vh;
+    width: 60vw;
+    z-index: -100;
+    margin-left: -1vw;
+    object-fit: contain;
+}
+
+.gridpaper3species
+{
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    width: 45vw;
+    z-index: -100;
+    margin-left: 53vw;
+    object-fit: contain;
+}
+
+.bgflower1species
+{
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 30vh;
+    width: 10vw;
+    z-index: -100;
+    margin-top: 100vh;
+    margin-left: 35vw;
+    object-fit: contain;
+}
+
+.bgflower2species
+{
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 30vh;
+    width: 10vw;
+    z-index: -100;
+    margin-top: 50vh;
+    margin-left: 35vw;
+    object-fit: contain;
+}
+
+.bgflower3species
+{
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 55vh;
+    width: 28vw;
+    z-index: -100;
+    margin-top: 20vh;
+    margin-left: 70vw;
+    object-fit: contain;
+}
+
+.bgflower4species
+{
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 30vh;
+    width: 10vw;
+    z-index: -100;
+    margin-top: 50vh;
+    margin-left: 35vw;
+    object-fit: contain;
+}
+
+.bgflower5species
+{
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 30vh;
+    width: 10vw;
+    z-index: -100;
+    margin-top: 50vh;
+    margin-left: 35vw;
+    object-fit: contain;
+}
+
+
+.bgleaf1species
+{
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 50vh;
+    width: 10vw;
+    z-index: -100;
+    margin-top: 155vh;
+    margin-left: 83vw;
+    object-fit: contain;
+}
+
+.bgleaf2species
+{
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 35vh;
+    width: 15vw;
+    z-index: -100;
+    margin-top: 20vh;
+    margin-left: 80vw;
+    object-fit: contain;
+}
+
+.bgfleaf3species
+{
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 30vh;
+    width: 10vw;
+    z-index: -100;
+    margin-top: 50vh;
+    margin-left: 35vw;
+    object-fit: contain;
+}
+
+.bgfleaf4species
+{
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 35vh;
+    width: 15vw;
+    z-index: -100;
+    margin-top: 20vh;
+    margin-left: 80vw;
+    object-fit: contain;
+}
+
+.speciesh1
+{
+    text-align: center;
+    padding-top: 3vw;
+    margin-bottom: 3vw;
+    font-family: myFont;
+    font-size: 70px;
+}
+
+.speciesh4
+{
+    font-family: myFont;
+    font-size: 35px;
+    text-align: center;
+    margin: 3vw;
+    margin-bottom: -3vw;
+    margin-top: 2vw;
+}
+
+.speciesp
+{
+    text-align: justify;
+    margin-bottom: 3vw;
+    margin: auto;
+    font-family: myFont2;
+    font-size: 30px;
+    width: 80%;
+}
+
+.sciname
+{
+    font-family: myFont2;
+    font-style: italic;
+    font-size:20px;
+}
+
+.speciesdl
+{
+    margin: auto;
+    text-align: justify;
+    width: 90%;
+}
+
+
+.speciesdt
+{
+    font-family: myFont2;
+    font-size:20px;
+    margin: auto;
+    margin-top: 2vh;
+    margin-bottom: 2vh;
+}
+
+.speciesdd
+{
+    font-family:myFont2;
+    font-size:20px;
+    margin: auto;
+    margin-top: 2vh;
+    margin-bottom: 2vh;
+    text-align: justify;
+}
+
+.speciesimg
+{
+    width: 300px;
+    height: 400px;
+    object-fit: contain;
+
+}
+
+.speciesimgdiv
+{
+    text-align: center;
+}
+
+.species
+{
+    margin: auto;
+    width: 100%;
+}
+
+.speciescol
+{
+    border: 1px solid black;
+    margin: auto;
+    width: 95%;
+    margin-top: 4vw;
+}
+
+
+
+
+/* hamster food style */
+
+.bgpaper1food
+{
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 60vh;
+    width: 98.9vw;
+    z-index: -100;
+}
+
+.bgpaper2food
+{
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 50vh;
+    width: 98.9vw;
+    z-index: -100;
+}
+
+.plainpaper1food
+{
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-top: -1vw;
+    height: 55vh;
+    width: 98.9vw;
+    z-index: -100;
+
+}
+
+.bgflower1food
+{
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 40vh;
+    width: 10vw;
+    z-index: -100;
+    margin-top: 30vh;
+    margin-left: 88vw;
+    object-fit: contain;
+}
+
+.bgflower2food
+{
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 50vh;
+    width: 18vw;
+    z-index: -100;
+    margin-top: 30vh;
+    margin-left: 80vw;
+    object-fit: contain;
+}
+
+
+.bgleaf1food
+{
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 35vh;
+    width: 15vw;
+    z-index: -100;
+    margin-top: 120vh;
+    margin-left: -67vw;
+    object-fit: contain;
+}
+
+.bgleaf2food
+{
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 35vh;
+    width: 15vw;
+    z-index: -100;
+    margin-top: 120vh;
+    margin-left: vw;
+    object-fit: contain;
+}
+
+.foodh1
+{
+    text-align: center;
+    padding-top: 3vw;
+    margin-bottom: 3vw;
+    font-family: myFont;
+    font-size: 70px;
+}
+
+.foodh3
+{
+    text-align: center;
+    margin-top: 3vw;
+    margin-bottom: 3vw;
+    font-family: myFont;
+    font-size: 50px;
+}
+
+.foodh4
+{
+    font-family: myFont;
+    font-size: 35px;
+    text-align: center;
+    margin: 3vw;
+    margin-top: 3vw;
+    margin-bottom: 3vw;
+    width: 90%;
+}
+
+.foodp
+{
+    text-align: justify;
+    margin-bottom: 3vw;
+    margin: auto;
+    font-family: myFont2;
+    font-size: 30px;
+    width: 80%;
+}
+
+.foodp1
+{
+    text-align: center;
+    margin-bottom: 3vw;
+    padding-top: 3vw;
+    margin: auto;
+    font-family: myFont2;
+    font-size: 20px;
+    width: 80%;
+}
+
+.foodul
+{
+    text-align: justify;
+    margin: auto;
+    font-family: myFont2;
+    font-size: 20px;
+    width: 40%;
+}
+
+.foodimg
+{
+    height: 450px;
+    object-fit: contain;
+}
+
+.foodimgdiv
+{
+    margin: auto;
+    text-align: center;
+}
+
+
+.foodh1
+{
+    width: 100%;
+}
+
+.foodrow
+{
+    width: 95%;
+    margin: auto;
+}
+
+.food
+{
+    width: 99%;
+}
+
+
+/* hamster tame style */
+.bgpaper1tame
+{
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 50vh;
+    width: 98.9vw;
+    z-index: -100;
+}
+
+.bgpaper2tame
+{
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 50vh;
+    width: 98.9vw;
+    z-index: -100;
+}
+
+.plainpaper1
+{
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    width: 98.9vw;
+    z-index: -100;
+    object-fit: contain;
+}
+
+.bgflower1tame
+{
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 50vh;
+    width: 18vw;
+    z-index: -100;
+    margin-top: 30vh;
+    margin-left: 80vw;
+    object-fit: contain;
+}
+
+.bgflower2tame
+{
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 30vh;
+    width: 10vw;
+    z-index: -100;
+    margin-top: -19vh;
+    margin-left: 88vw;
+    object-fit: contain;
+}
+
+.bgleaf1tame
+{
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 50vh;
+    width: 20vw;
+    z-index: -100;
+    margin-top: -38vh;
+    margin-left: -3vw;
+    object-fit: contain;
+}
+
+.bgleaf2tame
+{
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 40vh;
+    width: 10vw;
+    z-index: -100;
+    margin-top: 35vh;
+    margin-left: -5vw;
+    object-fit: contain;
+}
+
+.bgleaf3tame
+{
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 40vh;
+    width: 10vw;
+    z-index: -100;
+    margin-top: 40vh;
+    margin-left: -4vw;
+    object-fit: contain;
+}
+.bgtape1tame
+{
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 50vh;
+    width: 18vw;
+    z-index: -100;
+    margin-top: -16vh;
+    margin-left: 41vw;
+    object-fit: contain;
+}
+
+.paperbag1tame
+{
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 90vh;
+    width: 45.2vw;
+    z-index: -100;
+    margin-left:-15.9vw;
+    object-fit: contain;
+}
+
+.tameheader
+{
+    text-align: center;
+    margin: auto;
+    padding-top: 10vh;
+}
+
+.tameheaderimg
+{
+    width: 50vw;
+    object-fit: contain;
+    text-align: center;
+    margin: auto;
+    border: 1vw solid #F2F1EB;
+}
+
+.tameh1
+{
+    text-align: center;
+    margin-top: 3vw;
+    margin-bottom: 3vw;
+    font-family: myFont;
+    font-size: 70px;
+}
+
+.tameh3
+{
+    text-align: center;
+    margin-top: 3vw;
+    margin-bottom: 3vw;
+    font-family: myFont;
+    font-size: 50px;
+}
+
+.tamep
+{
+    text-align: justify;
+    margin-bottom: 3vw;
+    margin: auto;
+    font-family: myFont2;
+    font-size: 30px;
+    width: 80%;
+}
+
+.tamep1
+{
+    text-align: justify;
+    margin-bottom: 3vw;
+    margin: auto;
+    font-family: myFont2;
+    font-size: 30px;
+    width:85%;
+}
+
+.tameimg
+{
+    width: 350px;
+    height: 450px;
+    object-fit: contain;
+    text-align: center;
+    margin: auto;
+}
+
+.tameimgdiv
+{
+    margin: auto;
+    text-align: center;
+}
+
+.vid7
+{
+    margin: auto;
+    text-align: center;
+    margin-left: 4vw;
+    margin-bottom: 2vw;
+    background-image: url("media/gridpaper1.1.png");
+    aspect-ratio: 16 / 9;
+    width: 95%;
+}
+
+.divtamevid
+{
+    width: 90%;
+    margin: auto;
+}
+
+.vid8
+{
+    margin: auto;
+    text-align: center;
+    margin-left: -2vw;
+    margin-top: 5vw;
+    margin-bottom: 2vw;
+    background-image: url("media/gridpaper1.1.png");
+    aspect-ratio: 16 / 9;
+    width: 95%;
+}
+
+.divtamevid1
+{
+    width: 90%;
+    margin: auto;
+}
+
+
+/* hamster cage */
+
+#carousel1
+{
+    padding-top: 10vh;
+    margin: auto;
+}
+
+#carousel1 img
+{
+    margin: auto;
+    width: 50vw;
+    border: 1vw solid #F2F1EB;
+}
+
+.bgtape1cage
+{
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 50vh;
+    width: 18vw;
+    z-index: -100;
+    margin-top: -16vh;
+    margin-left: 41vw;
+    object-fit: contain;
+}
+
+.bgpaper1cage
+{
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 50vh;
+    width: 98.9vw;
+    z-index: -100;
+}
+
+.bgpaper2cage
+{
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 50vh;
+    width: 98.9vw;
+    z-index: -100;
+}
+
+.bgleaf1cage
+{
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 40vh;
+    width: 10vw;
+    z-index: -100;
+    margin-top: 1vh;
+    margin-left: 88vw;
+    object-fit: contain;
+}
+
+.bgleaf2cage
+{
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 40vh;
+    width: 10vw;
+    z-index: -100;
+    margin-top: -10vh;
+    margin-left: 88vw;
+    object-fit: contain;
+}
+
+.bgflower1cage
+{
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 50vh;
+    width: 30vw;
+    z-index: -100;
+    margin-top: 1vh;
+    margin-left: -7vw;
+    object-fit: contain;
+}
+
+.plainpaper1cage
+{
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 70vh;
+    width: 98.9vw;
+    z-index: -100;
+    margin-top: 85vh;
+}
+
+.plainpaper2cage
+{
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 70vh;
+    width: 98.9vw;
+    z-index: -100;
+}
+
+.cageh1
+{
+    text-align: center;
+    margin-top: 3vw;
+    margin-bottom: 3vw;
+    font-family: myFont;
+    font-size: 70px;
+}
+
+.cageh3
+{
+    text-align: center;
+    margin-top: 3vw;
+    margin-bottom: 3vw;
+    font-family: myFont;
+    font-size: 50px;
+}
+
+.cageh4
+{
+    font-family: myFont;
+    font-size: 35px;
+    text-align: center;
+    margin: 3vw;
+    margin-top: 3vw;
+    margin-bottom: 3vw;
+}
+
+.cagep
+{
+    text-align: justify;
+    margin-bottom: 3vw;
+    margin: auto;
+    font-family: myFont2;
+    font-size: 30px;
+    width: 80%;
+}
+
+.cagerow
+{
+    width: 80%;
+    margin: auto;
+}
+
+.vid3
+{
+    margin:auto;
+    border: 1vw solid #F2F1EB;
+    background-image: url("media/gridpaper1.1.png");
+    aspect-ratio: 16 / 9;
+    width: 100%;
+}
+
+.vid4
+{
+    margin:auto;
+    border: 1vw solid #F2F1EB;
+    background-image: url("media/gridpaper1.1.png");
+    aspect-ratio: 16 / 9;
+    width: 100%;
+}
+
+.vid5
+{
+    margin:auto;
+    border: 1vw solid #F2F1EB;
+    background-image: url("media/gridpaper1.1.png");
+    aspect-ratio: 16 / 9;
+    width: 100%;
+}
+
+.vid6
+{
+    margin:auto;
+    border: 1vw solid #F2F1EB;
+    background-image: url("media/gridpaper1.1.png");
+    aspect-ratio: 16 / 9;
+    width: 100%;
+}
+
+
+/* hamster bedding style */
+
+.bgpaperbedding1
+{
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 50vh;
+    width: 98.9vw;
+    z-index: -100;
+}
+
+.bgpaperbedding2
+{
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 50vh;
+    width:  98.9vw;
+}
+
+.gridpaper1bedding
+{
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    width: 50vw;
+    z-index: -100;
+    object-fit: contain;
+    margin-top: -5vw;
+}
+
+.gridpaper2bedding
+{
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    width: 50vw;
+    z-index: -100;
+    object-fit: contain;
+    margin-top: -5vw;
+    margin-left: 48.9vw;
+}
+
+.bgleafbedding1
+{
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 40vh;
+    width: 20vw;
+    z-index: -100;
+    margin-top: 10vh;
+    margin-left: -6vw;
+    object-fit: contain;
+}
+
+.bgflowerbedding1
+{
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 30vh;
+    width: 10vw;
+    z-index: -100;
+    object-fit: contain;
+    margin-top: -58vw;
+    margin-left: 85vw;
+}
+
+
+.beddingh1
+{
+    text-align: center;
+    padding-top: 3vw;
+    margin-bottom: 3vw;
+    font-family: myFont;
+    font-size: 70px;
+}
+
+.beddingh3
+{
+    text-align: center;
+    margin-top: 3vw;
+    margin-bottom: 3vw;
+    font-family: myFont;
+    font-size: 50px;
+}
+
+.beddingh4
+{
+    font-family: myFont;
+    font-size: 35px;
+    text-align: center;
+    margin: 3vw;
+    margin-top: 3vw;
+    margin-bottom: 3vw;
+}
+
+.beddingp
+{
+    text-align: center;
+    margin-bottom: 3vw;
+    margin: auto;
+    font-family: myFont2;
+    font-size: 30px;
+    width: 80%;
+}
+
+.beddingp1
+{
+    text-align: justify;
+    margin-bottom: 3vw;
+    padding-top: 3vw;
+    margin: auto;
+    font-family: myFont2;
+    font-size: 20px;
+    width: 80%;
+}
+
+.beddingimg
+{
+    width: 384px;
+    height:451.75px;
+    object-fit: contain;
+    text-align: center;
+    margin: auto;
+}
+
+.beddingimgdiv
+{
+    margin: auto;
+    text-align: center;
+}
+
+.bedding
+{
+    width: 99%;
+}
+
+
+/* hamster sand style */
+.bgpaper1sand
+{
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 50vh;
+    width: 98.9vw;
+    z-index: -100;
+}
+
+.bgpaper2sand
+{
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 50vh;
+    width: 98.9vw;
+    z-index: -100;
+}
+
+.bgleaf1sand
+{
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 30vh;
+    width: 10vw;
+    z-index: -100;
+    object-fit: contain;
+    margin-top: -6vw;
+    margin-left: 85vw;
+}
+
+.bgleaf2sand
+{
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 30vh;
+    width: 10vw;
+    z-index: -100;
+    object-fit: contain;
+    margin-top: -15vw;
+    margin-left: 22vw;
+}
+
+
+.bgflower1sand
+{
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 30vh;
+    width: 10vw;
+    z-index: -100;
+    object-fit: contain;
+    margin-top: -6vw;
+}
+
+.sandh1
+{
+    text-align: center;
+    padding-top: 3vw;
+    margin-bottom: 3vw;
+    font-family: myFont;
+    font-size: 70px;
+}
+
+.sandh3
+{
+    text-align: center;
+    margin-top: 3vw;
+    margin-bottom: 3vw;
+    font-family: myFont;
+    font-size: 50px;
+}
+
+.sandh4
+{
+    font-family: myFont;
+    font-size: 35px;
+    text-align: center;
+    margin: 3vw;
+    margin-top: 3vw;
+    margin-bottom: 3vw;
+}
+
+.sandp
+{
+    text-align: justify;
+    margin-bottom: 3vw;
+    margin: auto;
+    font-family: myFont2;
+    font-size: 30px;
+    width: 80%;
+}
+
+.sandimg
+{
+    width: 384px;
+    height:451.75px;
+    object-fit: contain;
+    text-align: center;
+}
+
+.sandimgdiv
+{
+    margin: auto;
+    text-align: center;
+}
+
+.sandbath
+{
+    width: 99%;
+}
+
+/* hamster toy */
+.bgpaper1toy
+{
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 50vh;
+    width: 98.9vw;
+    z-index: -100;
+}
+
+.bgpaper2toy
+{
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 50vh;
+    width: 98.9vw;
+    z-index: -100;
+}
+
+.plainpaper1toy
+{
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 70vh;
+    width: 98.9vw;
+    z-index: -100;
+    margin-top: -5vw;
+}
+
+.plainpaper2toy
+{
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 80vh;
+    width: 98.9vw;
+    z-index: -100;
+    margin-top: -8vw;
+}
+
+.bgflower1toy
+{
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 40vh;
+    width: 10vw;
+    z-index: -100;
+    object-fit: contain;
+    margin-top: -22vw;
+    margin-left: 87vw;
+}
+
+.bgflower2toy
+{
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 30vh;
+    width: 10vw;
+    z-index: -100;
+    object-fit: contain;
+    margin-top: 1vw;
+    margin-left: 87vw;
+}
+
+.bgflower3toy
+{
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 45vh;
+    width: 10vw;
+    z-index: -100;
+    object-fit: contain;
+    margin-top: -20vw;
+    margin-left: 87vw;
+}
+
+.bgleaf1toy
+{
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 40vh;
+    width: 20vw;
+    z-index: -100;
+    object-fit: contain;
+    margin-top: 20vw;
+    margin-left: -1vw;
+}
+
+.bgleaf2toy
+{
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 40vh;
+    width: 15vw;
+    z-index: -100;
+    object-fit: contain;
+    margin-top: 3vw;
+    margin-left: -1vw;
+}
+
+.paperbag1bedding
+{
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 50vh;
+    width: 40vw;
+    z-index: -100;
+    object-fit: contain;
+    margin-top: 40vw;
+    margin-left: 58.9vw;
+}
+
+.paperbag2bedding
+{
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 50vh;
+    width: 40vw;
+    z-index: -100;
+    object-fit: contain;
+    margin-top: 25vw;
+    margin-left: -1vw;
+}
+.toyh1
+{
+    text-align: center;
+    padding-top: 3vw;
+    margin-bottom: 3vw;
+    font-family: myFont;
+    font-size: 70px;
+}
+
+.toyh3
+{
+    text-align: center;
+    margin-top: 3vw;
+    margin-bottom: 3vw;
+    font-family: myFont;
+    font-size: 50px;
+}
+
+.toyh4
+{
+    font-family: myFont;
+    font-size: 35px;
+    text-align: center;
+    margin: 3vw;
+    margin-top: 3vw;
+    margin-bottom: 3vw;
+}
+
+.toyp
+{
+    text-align: justify;
+    margin-bottom: 3vw;
+    margin: auto;
+    font-family: myFont2;
+    font-size: 30px;
+    width: 80%;
+}
+
+.toyp1
+{
+    text-align: justify;
+    margin-bottom: 3vw;
+    padding-top: 3vw;
+    margin: auto;
+    font-family: myFont2;
+    font-size: 20px;
+    width: 80%;
+}
+
+.toy
+{
+    width: 99%;
+}
+
+.wheelimg
+{
+    width: 384px;
+    height:451.75px;
+    object-fit: contain;
+    text-align: center;
+}
+
+.wheelimgdiv
+{
+    margin: auto;
+    text-align: center;
+}
+
+.hideoutimg
+{
+    width: 384px;
+    height:451.75px;
+    object-fit: contain;
+    text-align: center;
+    margin: auto;
+}
+
+.hideoutimgdiv
+{
+    margin: auto;
+    text-align: center;
+}
+
+/* hamrieshop style */
+
+@media screen and (max-width: 567px)
+{
+    .card:not(:first-child)
+    {
+        display: none;
+    }
+}
+
+.bgpaper1shop
+{
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 50vh;
+    width: 98.9vw;
+    z-index: -100;
+}
+
+.bgleaf1shop
+{
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 40vh;
+    width: 10vw;
+    z-index: -100;
+    margin-top: -7vh;
+    margin-left: 88vw;
+    object-fit: contain;
+}
+
+.bgleaf2shop
+{
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 40vh;
+    width: 10vw;
+    z-index: -100;
+    margin-top: 70vh;
+    margin-left: 88vw;
+    object-fit: contain;
+}
+
+.bgflower1shop
+{
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 50vh;
+    width: 30vw;
+    z-index: -100;
+    margin-top: 1vh;
+    margin-left: -7vw;
+    object-fit: contain;
+}
+
+.plainpaper1shop
+{
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 70vh;
+    width: 98.9vw;
+    z-index: -100;
+}
+
+.plainpaper2shop
+{
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 70vh;
+    width: 98.9vw;
+    z-index: -100;
+}
+
+.shoph1
+{
+    text-align: center;
+    margin-top: 3vw;
+    margin-bottom: 6vw;
+    font-family: myFont;
+    font-size: 70px;
+}
+
+.shoph3
+{
+    text-align: center;
+    margin-top: 3vw;
+    margin-bottom: 3vw;
+    font-family: myFont;
+    font-size: 50px;
+}
+
+
+
+.shopnav li
+{
+    display: inline;
+    padding-right: 3vw;
+}
+
+.shopnavlink
+{
+    font-family: myFont2;
+    font-size: 20px;
+    color: black;
+}
+
+.hamrieshop-card
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.card
+{
+    margin: 2vw;
+    width: 300px;
+}
+
+.card-productName
+{
+    font-family: myFont;
+    font-size: 30px;
+}
+
+.card-productDetail
+{
+    font-family: myFont2;
+    font-size: 20px;
+}
+
+.card-productPrice
+{
+    font-family: myFont2;
+    font-size: 20px;
+    margin-top: 0.5vh;
+}
+
+.price-quantity
+{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 15px;
+}
+
+.quantity-body
+{
+    font-family: myFont2;
+    font-size: 20px;
+}
+
+.quantity
+{
+    width: 40px;
+}
+
+.quantity-message
+{
+    font-family: myFont2;
+    font-size: 19px;
+}
+
+.btn-body
+{
+    display: flex;
+    justify-content: center;
+}
+
+.card-addToCartBtn
+{
+    font-family: myFont2;
+    font-size: 20px;
+    background-color: #CEB2DB;
+}
+
+.card-addToCartBtn:hover
+{
+    background-color: #eadcf0;
+}
+
+/* hamrieshop bag style */
+.bagpaper1
+{
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 50vh;
+    width: 98.9vw;
+    z-index: -100;
+    margin-top: -3%;
+}
+
+.bagpaper2
+{
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 50vh;
+    width:  98.9vw;
+}
+
+
+.bagleaf1
+{
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 10vw;
+    z-index: -100;
+    margin-top: -8%;
+    margin-left: -15px;
+    object-fit: contain;
+}
+
+.bagflower1
+{
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 10vw;
+    z-index: -100;
+    object-fit: contain;
+    margin-left: 85vw;
+}
+
+
+.Mybagh3
+{
+    text-align: start;
+    margin-top: 2vw;
+    margin-bottom: 2vw;
+    margin-left: 2.5%;
+    font-family: myFont2;
+    font-size: 30px;
+}
+
+.table-form-body
+{
+    background-image: url("media/picfullbg2.png");
+    margin: auto;
+    width: 90%;
+}
+
+.tableproduct-body
+{
+    display: flex;
+    justify-content: center;
+    font-family: myfont2;
+    font-size: 20px;
+    
+}
+
+#tableproduct
+{
+    border: 1px solid black;
+    padding: 2vw;
+    background-size: cover;
+    text-align: center;
+    width: 95%;
+    margin-top:3%;
+}
+
+#tableproduct th
+{
+    font-family: myfont;
+    font-size: 30px;
+}
+
+@media screen and (max-width: 1500px)
+{
+    .form-content
+    {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        width: 80%;
+        margin: auto;
+    }
+
+    .form label
+    {
+       margin: auto;
+       margin-bottom: 15px;
+    }
+}
+
+@media screen and (max-width: 700px)
+{
+    #tableproduct th
+    {
+        font-family: myfont;
+        font-size: 20px;
+    }
+
+    .tableproduct-body
+    {
+        display: flex;
+        justify-content: center;
+        font-family: myfont2;
+        font-size: 15px;
+    }
+
+    .Mybagh3
+    {
+        font-family: myFont2;
+        font-size: 20px;
+    }   
+    
+}
+
+@media screen and (max-width: 500px)
+{
+    #tableproduct th
+    {
+        font-family: myfont;
+        font-size: 15px;
+    }
+}
+
+
+
+
+
+.form
+{
+    /* background-image: url("media/picfullbg2.png"); */
+    background-size: cover;
+    text-align: center;
+    margin: auto;
+}
+
+.form-content
+{
+    display: flex;
+    justify-content: space-between;
+}
+
+.form label
+{
+    font-family: myfont;
+    font-size: 20px;
+    margin-left: 10px;
+}
+
+.form input
+{
+    font-family: myfont2;
+    font-size: 19px;
+    margin-right: 30px;
+}
+
+.form button
+{
+    font-family: myFont2;
+    font-size: 20px;
+    background-color: #CEB2DB;
+    margin-top: 2%;
+    margin-bottom: 3%;
+    margin-right: 50px;
+}
+
+.form button:hover
+{
+    background-color: #eadcf0;
+}
+
+.buyagain a
+{
+    text-decoration: none;
+    color: black;
+}
+
+.msg
+{
+    font-family: myfont2;
+    font-size: 30px;
+}
+
+.thankyou
+{
+    margin-top: 2%;
+    font-family: myFont;
+    font-size: 50px;
+}
+
+.card alert
+{
+    background-color: #CEB2DB;
+}

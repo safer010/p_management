@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<!-- Author's Name: Safer Marie Pattawi
+Last Updated:Feb 18,2024
+Description: This is the main page of p management -->
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>P Management Main</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="/css/p_management.css">
+
+</head>
+<body class="p_management_main_body">
+    
+    <!-- nav section -->
+    <nav id="top" class="navbar navbar-expand-lg nav" >
+        <div class="container nav">
+            <!-- logo -->
+            <a href="/p_management" class="navbar-brand"><img src="/media/p_management_logo.png" alt="company logo" class=" p_management_logo"></a>
+            
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse nav_bar" id="navbarNav">
+                <ul class="navbar-nav nav_ul">
+
+                  <li class="nav-item dropdown nav_li">
+                    <a class="nav-link nav_link" href="/p_management" role="button" >
+                      Home
+                    </a>
+                  </li>
+
+                  <li class="nav-item dropdown nav_li">
+                    <a class="nav-link nav_link" href="/p_management_add_form" role="button" >
+                      Add Product
+                    </a>
+                  </li>
+
+                  <li class="nav-item dropdown">
+                    <a class="nav-link nav_link" data-bs-toggle="modal" data-bs-target="#modal_logout" role="button" >
+                      Logout
+                    </a>
+                  </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!-- end of nav section -->
+
+    <!-- modal for logout-->
+    <div class="modal fade modal_logout" id="modal_logout" tabindex="-1" aria-labelledby="modal_logout" aria-hidden="true">
+                      <div class="modal-dialog modal_logout_dialog">
+                        <div class="modal-content modal_logout_body">
+                          <div class="modal-header">
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                          </div>
+                          <div class="modal-body">
+                            <h3>Are you sure you want to logout?</h3>
+                          </div>
+                          <div class="modal-footer">
+                            <a class="nav-link btn  modal_logout_btn " data-bs-dismiss="modal"> No </a>
+                            <a class="nav-link btn  modal_logout_btn "  href="/"> Yes </a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+    <!-- end of modal -->
+
+  <div>
+
+    <h3 class="notification"> {{message}}</h3>
+    <p class="notification2">{{message2}}</p>
+
+      <div class="container p_management_main_body1">
+          <table class=" p_management_table">
+              <tr>
+                  <th colspan="7"><h1>Product List</h1> <hr></th>
+              </tr>
+
+              <tr>
+                  <th>Product Name <hr></th>
+                  <th>Category <hr></th>
+                  <th>Description <hr></th>
+                  <th>Price <hr></th>
+                  <th>Image <hr></th>
+                  <th colspan="2"> Action <hr></th>
+              </tr>
+            
+              {{#each productList}}
+
+              <tr>
+                  <td>{{this.name}}</td>
+                  <td>{{this.category}}</td>
+                  <td>{{this.description}}</td>
+                  <td>{{this.price}}</td>
+                  <td><img src="/images/{{this.image}}" class="table_img"></td>
+                  <td><a class="btn table_btn" href="/p_management_edit_form/{{this.product_id}}">Edit</a></td>
+                  <td> <a class="btn table_btn " href="/p_management_delete_form/{{this.product_id}}">Delete</a></td>
+              </tr>
+
+              <tr>
+                <td><hr></td>
+                <th><hr></th>
+                <th><hr></th>
+                <th><hr></th>
+                <th><hr></th>
+                <th><hr></th>
+                <th><hr></th>
+              </tr>
+      
+              {{/each}}
+          </table>
+      </div>
+  </div>
+   
+  <!-- this is for the footer section of hamrie-->
+  <footer class="footer">
+    <div class="text-white text-center footer_body">
+
+      <div class="row footer_row">
+        <div class="col-4">
+          <p class="footer_p">Contact Us</p>
+          <a href="mailto:p_management@gmail.com"><img src="/media/email_icon.png" class="footer_img"></a>
+          <a href="mailto:p_management@gmail.com" class="footer_a">p_management@gmail.com</a>
+
+        </div>
+
+
+        <div class="col-4 footer_col">
+          <p class="footer_p">Social Media</p>
+            <a href="#"><img src="/media/ig_icon.png" class="footer_img"></a>
+            <a href="#"><img src="/media/fb_icon.png" class="footer_img"></a>
+        </div>
+
+        <div class="col-4">
+          <p class="footer_p">Client Sample</p>
+          <p class="footer_p1"><a  href="/hamrie/hamrieshop"  class="footer_a"> Hamrie Shop</a></p>
+        </div>
+
+      </div>
+      
+      <p class="footer_p"> &copy <a class="footer_a" title="Tap to go back to the main page" href="/p_management">P Management</a> 2024</p>
+    </div>
+  </footer>
+  <!-- end  of footer -->
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+</body>
+</html>

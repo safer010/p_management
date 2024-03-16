@@ -1,0 +1,330 @@
+
+body
+{
+    background-image: url("/media/picfullbg1.jpg");
+}
+
+@font-face
+{
+    font-family: myFont;
+    src: url("/font/TheSmileFont.otf");
+
+}
+
+@font-face {
+    font-family: myFont2;
+    src: url("/font/GlacialIndifference.otf");
+}
+
+.icon
+{
+    color: black;
+}
+
+.icon:hover
+{
+    color: #CEB2DB;
+}
+
+.container-fluid
+{
+    margin: 0%;
+    padding: 0%;
+}
+
+
+/* nav style */
+.navbar
+{
+    background-image: url("/media/picfullbg2.png");
+    background-size: cover;
+    width: 100%;
+}
+
+.navbar-brand img
+{
+    width: 215px;
+    height: 90px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin-left: 2vw;
+    margin-right: 2vw;
+}
+
+.navbar-toggler
+{
+   justify-content: end;
+   margin: 3vw;
+}
+
+.navbar-nav
+{
+    margin: auto;
+    padding-left: 1.4vw;
+}
+.navbar-nav li
+{
+    display: inline;
+    padding-right: 1.4vw;
+}
+
+.nav-link
+{
+    font-family: myFont2;
+    font-size: 20px;
+    color: black;
+}
+
+.nav-link img
+{
+    height: 50px;
+}
+
+.nav-link:hover
+{
+    text-decoration: underline;
+}
+
+#hamsterlogo
+{
+    width:80px;
+    margin-right: 4px;
+}
+
+#carelogo
+{
+    width: 50px;
+    margin-right: 4px;
+}
+
+#cagelogo
+{
+    width: 65px;
+    margin-right: 4px;
+}
+
+#toylogo
+{
+    width: 50px;
+    margin-right: 4px;
+}
+
+#cartlogo
+{
+    width: 50px;
+    margin-right: 4px;
+}
+
+.dropdown-menu
+{
+    background-color:  #F2F1EB;
+    width: 200px;
+}
+
+.dropdown-menu li a
+{
+    font-family:myFont2;
+    font-size: 20px;
+    color: black;
+}
+
+.dropdown-menu li a:hover
+{
+    background-color:#CEB2DB;
+}
+
+
+/* footer style */
+.footer
+{
+    background-image: url("/media/picfullbg2.png");
+    background-size: cover;
+    width: 100%;
+    height: 120px;
+}
+
+.footp
+{
+    text-align: center;
+    margin: auto;
+    margin-top: 2%;
+    font-family: myFont2;
+    font-size: 20px;
+    color: black;
+}
+
+.footp1
+{
+    text-align: center;
+    margin: auto;
+    margin-top: 1%;
+    font-family: myFont2;
+    font-size: 20px;
+    color: black;
+}
+
+
+.footlogo
+{
+    text-decoration: none;
+    color: black;
+}
+
+.footlogo:hover
+{
+    text-decoration: underline;
+    color: #CEB2DB;
+}
+
+
+/* button style */
+#btntop{
+    position: fixed;
+    bottom: 10px;
+    float: right;
+    right: 1%;
+    max-width: 50px;
+    width: 100%;
+    font-size: 25px;
+    color: black;
+    border-color:#F2F1EB;
+    background-color: #F2F1EB;
+    padding: .5px;
+    border-radius: 50px;
+    z-index:2;
+}
+
+#btntop:hover
+{
+    color: black;
+    background-color: #CEB2DB;
+}
+
+/* hamrieshop style */
+
+.bgpaper1shop
+{
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 50vh;
+    width: 98.9vw;
+    z-index: -100;
+}
+
+.bgpaper2shop
+{
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 50vh;
+    width: 98.9vw;
+    z-index: -100;
+}
+
+
+.shoph1
+{
+    text-align: center;
+    margin-top: 3vw;
+    margin-bottom: 6vw;
+    font-family: myFont;
+    font-size: 70px;
+}
+
+.shoph3
+{
+    text-align: center;
+    margin-top: 3vw;
+    margin-bottom: 3vw;
+    font-family: myFont;
+    font-size: 50px;
+}
+
+
+
+.shopnav li
+{
+    display: inline;
+    padding-right: 3vw;
+}
+
+.shopnavlink
+{
+    font-family: myFont2;
+    font-size: 20px;
+    color: black;
+}
+
+.hamrieshop-card
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.card
+{
+    margin: 2vw;
+    width: 300px;
+}
+
+.card-productName
+{
+    font-family: myFont;
+    font-size: 30px;
+}
+
+.card-productDetail
+{
+    font-family: myFont2;
+    font-size: 20px;
+}
+
+.card-productPrice
+{
+    font-family: myFont2;
+    font-size: 20px;
+    margin-top: 0.5vh;
+}
+
+.price-quantity
+{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 15px;
+}
+
+.quantity-body
+{
+    font-family: myFont2;
+    font-size: 20px;
+}
+
+.quantity
+{
+    width: 40px;
+}
+
+.quantity-message
+{
+    font-family: myFont2;
+    font-size: 19px;
+}
+
+.btn-body
+{
+    display: flex;
+    justify-content: center;
+}
+
+.card-addToCartBtn
+{
+    font-family: myFont2;
+    font-size: 20px;
+    background-color: #CEB2DB;
+}
+
+.card-addToCartBtn:hover
+{
+    background-color: #eadcf0;
+}

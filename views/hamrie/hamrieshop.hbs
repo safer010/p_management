@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<!-- Author's Name: Safer Marie Pattawi
+Last Updated:Feb 17,2024
+Description: This is the hamrie shop page which is the newly added feature in hamrie-->
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hamrie Shop</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.2/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="/css/hamrie.css">
+</head>
+
+<body class="bg-image">
+
+        <!-- this is for the nav section of hamrie-->
+        <nav id="top" class="navbar navbar-expand-lg">
+            <div class="container-fluid">
+
+                <!-- logo -->
+                <a href="/hamrie/hamrieshop" class="navbar-brand"><img src="/media/hamrielogo3.png" alt="company logo"></a>
+               
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                  <span class="navbar-toggler-icon"></span>
+                </button>
+             
+               <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav shopnav">
+
+                      <li class="nav-item dropdown">
+                        <a class="nav-link shopnavlink" href="/hamrieshop/hamsterfood" role="button" >
+                          <img id="toylogo" src="/media/navlogofood2.png" alt="">Hamster Food
+                        </a>
+                      </li>
+
+                      <li class="nav-item dropdown">
+                        <a class="nav-link shopnavlink" href="/hamrieshop/cageessentials" role="button" >
+                          <img id="cagelogo" src="/media/navlogocage.PNG" alt="">Hamster Cage Essentials
+                        </a>
+                      </li>
+
+                      <li class="nav-item dropdown">
+                        <a class="nav-link shopnavlink" href="/hamrieshop/hamstertoy" role="button" >
+                          <img id="toylogo" src="/media/navlogotoy.PNG" alt="">Hamster Toys
+                        </a>
+                      </li>
+
+                      <li class="nav-item dropdown">
+                        <a class="nav-link" href="/hamrie/hamrieshop" role="button" >
+                          <img id="cartlogo" src="/media/navlogoshop.png" alt="">My Bag
+                        </a>
+                      </li>
+
+                    </ul>
+                </div>
+            </div>
+        </nav><!-- end of nav section -->
+
+        <!-- this is for the content section of hamrie homepage--> 
+        <div class="container-fluid ">
+          <img class="bgpaper1shop z-n1 position-absolute  " src="/media/coloredpaper4.png" alt="">
+          
+              <div id="shopCarousel1" class="carousel carousel-dark slide d-lg-display ">
+                <div class="carousel-inner">
+
+                  <h1 class="shoph1">{{title}}</h1>
+
+                  <div class="hamrieshop-card">
+                  {{#each productList}}
+
+                     <div class="card">
+                            <img src="/images/{{this.image}}" class="card-img-top productImage" alt="" >
+                            <div class="card-body">
+                              <h5 class="card-productName">{{this.name}}</h5>
+                              <p class="card-productDetail" >{{this.description}}</p> 
+                              <p class="card-productDetail" >{{this.category}}</p> 
+
+                              <span class="price-quantity">
+                                <h5 class="card-productPrice"><span>&#8369;{{this.price}}</span></h5> 
+          
+                                <div class="quantity-body">
+                                  <label for="quantity">Quantity:</label>
+                                  <input type="number" min="1" class="quantity" id="quantity1">
+                                </div>
+                              </span>
+
+                              <p class="quantity-message" id="quantity-message1"></p>
+                              <span class="btn-body"><button onclick="getValue(event)" class="btn card-addToCartBtn" >Add to Bag</button></span>
+                            </div>
+                      </div>
+                  {{/each}}
+
+                  </div>
+                  
+                </div>
+              </div>
+
+              <img class="bgpaper2shop z-n1 position-relative   " src="/media/coloredpaper8.png" alt="">
+              <!-- this is for the footer section of hamrie-->
+                <footer class="footer z-1 position-absolute  ">
+                  <div class="text-white text-center  ">
+                    <p class="footp"> &copy <a class="footlogo" title="Tap to go back to the main page" href="index.html">Hamrie</a> 2024</p>
+                    <p class="footp1"> <a class="footlogo" href="/p_management" target="_blank">p_management</a></p>
+                  </div>
+                </footer>
+              <!-- end  of footer -->
+              <button><a id="btntop"href="#top"><i class="bi bi-chevron-up"></i></a></button>
+
+        </div><!-- end of content-->
+        
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    <script src="hamrieshop.js"></script>  
+</body>
+</html>
