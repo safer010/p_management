@@ -2,12 +2,10 @@ import mysql from "mysql2";
 import dotenv from "dotenv";
 dotenv.config({path:"./.env"});
 import express from "express";
-import multer from "multer"; // use to upload image
-import path from "path";//for image
-import swal from 'sweetalert';
+import multer from "multer"; 
+import path from "path";
 
-// use to connect to the database
-//using env
+
 const db = mysql.createConnection(
     {host: process.env.DATABASE_HOST,
      user:process.env.DATABASE_USER,
@@ -24,15 +22,14 @@ const storage = multer.diskStorage
     });
 
 const upload = multer({storage:storage});
-
 const route = express.Router();
-///////////////////////////////////////////////////////////////////////////////////////////////////
+
 route.get("/", (req,res) =>
     {
        res.render("index"); 
     });
 
-/////////////////////////////////////////////////////////////////////////////////////////////////// login
+//login
 route.post("/p_management_login",(req,res) =>
 {
     const {email,password} = req.body;
@@ -61,7 +58,7 @@ route.get("/p_management",(req,res) =>
     res.redirect("/p_management_main");
 });
 
-/////////////////////////////////////////////////////////////////////////////////////////////////// display
+// p_management_main
 route.get("/p_management_main",(req,res) =>
 {
     db.query("SELECT a.product_id, a.name, b.category, a.description, a.price,a.image FROM products as a INNER JOIN  product_category as b ON a.product_category_id = b.product_category_id", 
@@ -81,7 +78,7 @@ route.get("/p_management_main",(req,res) =>
         });
 });
 
-/////////////////////////////////////////////////////////////////////////////////////////////////// add
+//p_management_add
 route.get("/p_management_add_form",(req,res) =>
 {
     res.render("p_management_add_form");
@@ -127,8 +124,7 @@ route.post("/p_management_add",upload.single("image"), (req,res) =>
     
 });
 
-/////////////////////////////////////////////////////////////////////////////////////////////////// update
-
+//p_management_edit
 route.get("/p_management_edit_form/:productId",(req,res) =>
 {
     const productId = req.params.productId;
@@ -184,7 +180,7 @@ route.post("/p_management_edit",upload.single("image"), (req,res) =>
 });
 
 
-/////////////////////////////////////////////////////////////////////////////////////////////////// delete
+//p_management_delete
 route.get("/p_management_delete_form/:productId",(req,res) =>
 {
     const productId = req.params.productId;
@@ -223,10 +219,11 @@ route.get("/p_management_delete/:productId",(req,res) =>
             }
         })
 })
-///////////////////////////////////////////////////////////////////////////////////////////////////// hamrie
+
+// hamrie shop
 route.get("/hamrie/hamrieshop",(req,res) =>
 {
-    db.query("SELECT a.product_id, a.name, b.category, a.description, a.price,a.image FROM products as a INNER JOIN  product_category as b ON a.product_category_id = b.product_category_id ORDER BY category  limit 9", 
+    db.query("SELECT a.product_id, a.name, b.category, a.description, a.price,a.image FROM products as a INNER JOIN  product_category as b ON a.product_category_id = b.product_category_id ORDER BY category  limit 12", 
     (err, result) => 
         {
             if(err)
